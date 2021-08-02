@@ -7,6 +7,7 @@ import store from './store'
 import dateFilter from '@/filters/date.filter.js'
 import currencyFilter from '@/filters/currency.filter.js'
 import messagePlugine from '@/utils/message.plugin'
+import tooltipDirective from '@/directives/tooltip.directive.js'
 import 'materialize-css/dist/js/materialize.min.js'
 import Loader from '@/components/app/Loader'
 import firebase from 'firebase/app'
@@ -17,6 +18,7 @@ Vue.use(Vuelidate)
 Vue.use(messagePlugine)
 Vue.filter('date', dateFilter)
 Vue.filter('currency', currencyFilter)
+Vue.directive('tooltip', tooltipDirective)
 Vue.component('Loader', Loader)
 Vue.config.productionTip = false
 
