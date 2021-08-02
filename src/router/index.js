@@ -30,7 +30,7 @@ const routes = [
 		component: () => import('../views/Categories.vue'),
 	},
 	{
-		path: '/detaile',
+		path: '/detaile/:id',
 		name: 'detaile',
 		meta: { layout: 'main', auth: true },
 		component: () => import('../views/DetaileRecord.vue'),
